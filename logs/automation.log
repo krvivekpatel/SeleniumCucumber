@@ -1,0 +1,144 @@
+2025-02-23 03:58:08 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 03:58:08 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 03:58:08 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 03:58:08 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-2
+2025-02-23 03:58:08 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-1
+2025-02-23 03:58:08 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 03:58:10 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-2
+2025-02-23 03:58:10 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-1
+2025-02-23 03:58:10 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 03:58:10 [TestNG-PoolService-2] INFO  hooks.Hooks - WebDriver initialized for thread: 19
+2025-02-23 03:58:10 [TestNG-PoolService-1] INFO  hooks.Hooks - WebDriver initialized for thread: 18
+2025-02-23 03:58:10 [TestNG-PoolService-0] INFO  hooks.Hooks - WebDriver initialized for thread: 17
+2025-02-23 03:58:10 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 03:58:10 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 03:58:10 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 03:58:11 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Entering username=user-succ1-1, password=pass-succ1-1
+2025-02-23 03:58:11 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Verifying dashboard displayed
+2025-02-23 03:58:11 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: PASSED
+2025-02-23 03:58:11 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 03:58:11 [TestNG-PoolService-1] INFO  utils.TestContext - Cleaning up TestContext for thread: 18
+2025-02-23 03:58:11 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Entering username=user-succ2-1, password=pass-succ2-1
+2025-02-23 03:58:11 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Verifying dashboard displayed
+2025-02-23 03:58:11 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: PASSED
+2025-02-23 03:58:11 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 03:58:11 [TestNG-PoolService-2] INFO  utils.TestContext - Cleaning up TestContext for thread: 19
+2025-02-23 03:58:11 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 03:58:11 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 03:58:11 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 03:58:11 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 03:58:11 [TestNG-PoolService-0] INFO  utils.TestContext - Cleaning up TestContext for thread: 17
+2025-02-23 04:04:03 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:04:03 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 04:04:03 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 04:04:03 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:04:03 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-2
+2025-02-23 04:04:03 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-1
+2025-02-23 04:04:03 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-2
+2025-02-23 04:04:03 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-1
+2025-02-23 04:04:03 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:04:05 [TestNG-PoolService-2] INFO  utils.BrowserManager - Initialized ChromeDriver for thread: 19
+2025-02-23 04:04:05 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver for thread: 17
+2025-02-23 04:04:05 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:04:05 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:04:05 [TestNG-PoolService-1] INFO  utils.BrowserManager - Initialized ChromeDriver for thread: 18
+2025-02-23 04:04:05 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:04:06 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:04:06 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:04:06 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 04:04:06 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:04:06 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:04:06 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Entering username=user-succ1-1, password=pass-succ1-1
+2025-02-23 04:04:06 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Verifying dashboard displayed
+2025-02-23 04:04:06 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: PASSED
+2025-02-23 04:04:06 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 04:04:06 [TestNG-PoolService-1] INFO  utils.BrowserManager - Quitting WebDriver for thread: 18
+2025-02-23 04:04:06 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Entering username=user-succ2-1, password=pass-succ2-1
+2025-02-23 04:04:06 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Verifying dashboard displayed
+2025-02-23 04:04:06 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: PASSED
+2025-02-23 04:04:06 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 04:04:06 [TestNG-PoolService-2] INFO  utils.BrowserManager - Quitting WebDriver for thread: 19
+2025-02-23 04:14:13 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 04:14:13 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 04:14:13 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:14:13 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-1
+2025-02-23 04:14:13 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:14:13 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-2
+2025-02-23 04:14:14 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-2
+2025-02-23 04:14:14 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-1
+2025-02-23 04:14:14 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:14:14 [TestNG-PoolService-1] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:14:14 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: FAILED
+2025-02-23 04:14:14 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: FAILED
+2025-02-23 04:14:14 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 04:14:14 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 04:14:14 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 04:14:14 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:14:52 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 04:14:52 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:14:52 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 04:14:52 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-2
+2025-02-23 04:14:52 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-1
+2025-02-23 04:14:52 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:14:52 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:14:52 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-2
+2025-02-23 04:14:52 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-1
+2025-02-23 04:14:52 [TestNG-PoolService-2] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:14:55 [TestNG-PoolService-1] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 18
+2025-02-23 04:14:55 [TestNG-PoolService-1] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:14:55 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:14:55 [TestNG-PoolService-2] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 19
+2025-02-23 04:14:55 [TestNG-PoolService-2] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:14:55 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:14:55 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:14:56 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Entering username=user-succ1-1, password=pass-succ1-1
+2025-02-23 04:14:56 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Verifying dashboard displayed
+2025-02-23 04:14:56 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: PASSED
+2025-02-23 04:14:56 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 04:14:56 [TestNG-PoolService-1] INFO  utils.BrowserManager - Quitting WebDriver for thread: 18
+2025-02-23 04:14:56 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Entering username=user-succ2-1, password=pass-succ2-1
+2025-02-23 04:14:56 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Verifying dashboard displayed
+2025-02-23 04:14:56 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: PASSED
+2025-02-23 04:14:56 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 04:14:56 [TestNG-PoolService-2] INFO  utils.BrowserManager - Quitting WebDriver for thread: 19
+2025-02-23 04:22:34 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:22:34 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 04:22:34 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 04:22:34 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:22:34 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-1
+2025-02-23 04:22:34 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-2
+2025-02-23 04:22:34 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:22:34 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-2
+2025-02-23 04:22:34 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-1
+2025-02-23 04:22:34 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:22:37 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:22:37 [TestNG-PoolService-2] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 19
+2025-02-23 04:22:37 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:22:37 [TestNG-PoolService-2] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:22:37 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:22:37 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:22:37 [TestNG-PoolService-1] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 18
+2025-02-23 04:22:37 [TestNG-PoolService-1] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:22:37 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:22:38 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Entering username=user-succ2-1, password=pass-succ2-1
+2025-02-23 04:22:38 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Verifying dashboard displayed
+2025-02-23 04:22:38 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: PASSED
+2025-02-23 04:22:38 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 04:22:38 [TestNG-PoolService-2] INFO  utils.BrowserManager - Quitting WebDriver for thread: 19
+2025-02-23 04:22:38 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Entering username=user-succ1-1, password=pass-succ1-1
+2025-02-23 04:22:38 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Verifying dashboard displayed
+2025-02-23 04:22:38 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: PASSED
+2025-02-23 04:22:38 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 04:22:38 [TestNG-PoolService-1] INFO  utils.BrowserManager - Quitting WebDriver for thread: 18
+2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17

@@ -1,5 +1,6 @@
 package utils;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -9,9 +10,9 @@ import java.util.*;
 
 public class ExcelDataProvider {
     private static final String TEST_DATA_PATH = "src/test/resources/testdata/";
+    private static final Logger logger = LogManager.getLogger(ExcelDataProvider.class);
 
     public static void loadTestData(String featureFileName, String scenarioName) {
-        Logger logger = TestContext.getInstance().getLogger();
         String excelFileName = TEST_DATA_PATH + featureFileName.replace(".feature", ".xlsx");
         List<Map<String, String>> rowDataList = new ArrayList<>();
 

@@ -3,7 +3,9 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.BrowserManager;
 import utils.TestContext;
 import org.openqa.selenium.WebDriver;
 
@@ -12,8 +14,8 @@ import java.util.Map;
 
 public class LoginSteps {
     private TestContext context = TestContext.getInstance();
-    private WebDriver driver = context.getDriver();
-    private Logger logger = context.getLogger();
+    private WebDriver driver = BrowserManager.getDriver(); // Use BrowserManager
+    private static final Logger logger = LogManager.getLogger(LoginSteps.class);
     private List<Map<String, String>> testData;
 
     @Given("I am on the login page")
