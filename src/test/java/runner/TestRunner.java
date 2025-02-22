@@ -5,10 +5,11 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-    features = "src/test/resources/features",
-    glue = {"stepdefinitions", "hooks"},
-    plugin = {"pretty", "html:target/cucumber-reports.html"},
-    monochrome = true
+        features = "src/test/resources/features",
+        glue = {"stepdefinitions", "hooks", "utils"},
+        plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"},
+        monochrome = true,
+        tags = "@Test" // Default tag, can be overridden via TestNG XML or command line
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
     @Override

@@ -1,11 +1,18 @@
-Feature: Login functionality
+@Test
+Feature: Login
 
-  Scenario Outline: Successful login with valid credentials
+  # Scenario for a successful login
+  Scenario: Successful
     Given I am on the login page
-    When I enter username "<username>" and password "<password>"
-    Then I should see the dashboard
+    When I enter username and password
+    And I should see the dashboard
 
-    Examples:
-      | username | password |
-      | user1    | pass1    |
-      | user2    | pass2    |
+  Scenario: Successful-1
+    Given I am on the login page
+    When I enter username and password
+    And I should see the dashboard
+
+  Scenario: Successful-2
+    Given I am on the login page
+    When I enter username and password
+    And I should see the dashboard

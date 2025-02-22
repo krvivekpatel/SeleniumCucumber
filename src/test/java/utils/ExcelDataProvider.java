@@ -1,5 +1,6 @@
 package utils;
 
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -7,21 +8,25 @@ import java.io.FileInputStream;
 import java.util.*;
 
 public class ExcelDataProvider {
-    private static final ThreadLocal<Map<String, List<Map<String, String>>>> testData = new ThreadLocal<>();
     private static final String TEST_DATA_PATH = "src/test/resources/testdata/";
 
     public static void loadTestData(String featureFileName, String scenarioName) {
+        Logger logger = TestContext.getInstance().getLogger();
         String excelFileName = TEST_DATA_PATH + featureFileName.replace(".feature", ".xlsx");
-        Map<String, List<Map<String, String>>> dataMap = new HashMap<>();
+        List<Map<String, String>> rowDataList = new ArrayList<>();
 
+        logger.info("Loading test data for feature: " + featureFileName + ", scenario: " + scenarioName);
         try (FileInputStream fis = new FileInputStream(excelFileName);
              Workbook workbook = new XSSFWorkbook(fis)) {
             Sheet sheet = workbook.getSheet(scenarioName);
-            if (sheet == null) throw new RuntimeException("Sheet '" + scenarioName + "' not found in " + excelFileName);
+            if (sheet == null) {
+                logger.error("Sheet '" + scenarioName + "' not found in " + excelFileName);
+                throw new RuntimeException("Sheet '" + scenarioName + "' not found in " + excelFileName);
+            }
 
-            List<Map<String, String>> rowDataList = new ArrayList<>();
             Row headerRow = sheet.getRow(0);
             int rowCount = sheet.getPhysicalNumberOfRows();
+            logger.debug("Found " + (rowCount - 1) + " data rows in sheet: " + scenarioName);
 
             for (int i = 1; i < rowCount; i++) {
                 Row row = sheet.getRow(i);
@@ -34,19 +39,15 @@ public class ExcelDataProvider {
                 }
                 rowDataList.add(rowData);
             }
-            dataMap.put(scenarioName, rowDataList);
-            testData.set(dataMap);
+            TestContext.getInstance().setTestData(rowDataList);
+            logger.info("Successfully loaded test data for scenario: " + scenarioName);
         } catch (Exception e) {
+            logger.error("Error loading test data from " + excelFileName, e);
             throw new RuntimeException("Error loading test data from " + excelFileName, e);
         }
     }
 
-    public static List<Map<String, String>> getTestData(String scenarioName) {
-        Map<String, List<Map<String, String>>> data = testData.get();
-        return data != null ? data.get(scenarioName) : Collections.emptyList();
-    }
-
-    public static void clearTestData() {
-        testData.remove();
+    public static List<Map<String, String>> getTestData() {
+        return TestContext.getInstance().getTestData();
     }
 }

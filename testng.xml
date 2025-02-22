@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cucumber Test Suite" parallel="methods" thread-count="2">
+    <test name="Smoke Tests">
+        <parameter name="cucumber.filter.tags" value="@smoke"/>
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test>
+    <test name="Regression Tests">
+        <parameter name="cucumber.filter.tags" value="@regression"/>
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
