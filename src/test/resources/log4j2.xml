@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console Appender for logging to the console -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} - [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- Rolling File Appender for scenario-specific log files -->
+        <RollingFile name="ScenarioFile" fileName="logs/${ctx:scenarioName}.log"
+                     filePattern="logs/${ctx:scenarioName}-%d{yyyy-MM-dd-HH-mm-ss}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} - [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <!-- Keep 7 files (e.g., 1 file per day) before rolling over -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger, logs everything at INFO level or higher -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ScenarioFile"/>
+        </Root>
+
+        <!-- Logger for TestLogger, used for scenario-specific logs -->
+        <Logger name="TestLogger" level="INFO" additivity="false">
+            <AppenderRef ref="ScenarioFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>
