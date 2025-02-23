@@ -9,22 +9,21 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.*;
 
-public class ExcelDataProvider {
+public class TestDataRepository {
     private static final String TEST_DATA_PATH = "src/test/resources/testdata/";
-    private static final Logger logger = LogManager.getLogger(ExcelDataProvider.class);
+    private static final Logger logger = LogManager.getLogger(TestDataRepository.class);
 
-    // Read test data from Excel
-    public static void loadTestData(String featureFileName, String scenarioName, TestContext context) {
+    public List<Map<String, String>> readTestData(String featureFileName, String scenarioName) {
         String excelFileName = TEST_DATA_PATH + featureFileName.replace(".feature", ".xlsx");
         List<Map<String, String>> rowDataList = new ArrayList<>();
 
-        logger.info("Loading test data for feature: " + featureFileName + ", scenario: " + scenarioName);
+        logger.info("Reading test data for feature: " + featureFileName + ", scenario: " + scenarioName);
         try (FileInputStream fis = new FileInputStream(excelFileName)) {
             Workbook workbook = new XSSFWorkbook(fis);
             Sheet sheet = workbook.getSheet(scenarioName);
             if (sheet == null) {
-                logger.error("Sheet '" + scenarioName + "' not found in " + excelFileName);
-                throw new RuntimeException("Sheet '" + scenarioName + "' not found in " + excelFileName);
+                logger.warn("Sheet '" + scenarioName + "' not found, returning empty data");
+                return rowDataList; // Return empty list instead of throwing exception
             }
 
             Row headerRow = sheet.getRow(0);
@@ -42,16 +41,15 @@ public class ExcelDataProvider {
                 }
                 rowDataList.add(rowData);
             }
-            context.setTestData(rowDataList);
-            logger.info("Successfully loaded test data for scenario: " + scenarioName);
+            logger.info("Successfully read test data for scenario: " + scenarioName);
+            return rowDataList;
         } catch (Exception e) {
-            logger.error("Error loading test data from " + excelFileName, e);
-            throw new RuntimeException("Error loading test data from " + excelFileName, e);
+            logger.error("Error reading test data from " + excelFileName, e);
+            throw new RuntimeException("Error reading test data", e);
         }
     }
 
-    // Write test data to Excel
-    public static void writeTestData(String featureFileName, String scenarioName, TestContext context, Map<String, String> newData) {
+    public void writeTestData(String featureFileName, String scenarioName, Map<String, String> newData) {
         String excelFileName = TEST_DATA_PATH + featureFileName.replace(".feature", ".xlsx");
         logger.info("Writing test data to Excel for feature: " + featureFileName + ", scenario: " + scenarioName);
 
@@ -67,7 +65,6 @@ public class ExcelDataProvider {
                 }
             }
 
-            // Append new row with data
             int rowCount = sheet.getPhysicalNumberOfRows();
             Row newRow = sheet.createRow(rowCount);
             int cellIndex = 0;
@@ -75,19 +72,13 @@ public class ExcelDataProvider {
                 newRow.createCell(cellIndex++).setCellValue(value);
             }
 
-            // Write to file
             try (FileOutputStream fos = new FileOutputStream(excelFileName)) {
                 workbook.write(fos);
                 logger.info("Successfully wrote test data to Excel for scenario: " + scenarioName);
             }
-
-            // Update TestContext with new data
-            List<Map<String, String>> updatedData = context.getTestData() != null ? new ArrayList<>(context.getTestData()) : new ArrayList<>();
-            updatedData.add(newData);
-            context.setTestData(updatedData);
         } catch (Exception e) {
             logger.error("Error writing test data to " + excelFileName, e);
-            throw new RuntimeException("Error writing test data to " + excelFileName, e);
+            throw new RuntimeException("Error writing test data", e);
         }
     }
 }

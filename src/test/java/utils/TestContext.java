@@ -4,27 +4,12 @@ import java.util.List;
 import java.util.Map;
 
 public class TestContext {
-    private static final ThreadLocal<TestContext> testContext = new ThreadLocal<>();
-
     private List<Map<String, String>> testData;
+    private String featureFileName;
 
-    private TestContext() {
+    public TestContext() {
         this.testData = null;
-    }
-
-    public static TestContext getInstance() {
-        if (testContext.get() == null) {
-            testContext.set(new TestContext());
-        }
-        return testContext.get();
-    }
-
-    public static void clearInstance() {
-        TestContext context = testContext.get();
-        if (context != null) {
-            BrowserManager.quitDriver(); // Delegate to BrowserManager
-            testContext.remove();
-        }
+        this.featureFileName = null;
     }
 
     public List<Map<String, String>> getTestData() {
@@ -33,5 +18,13 @@ public class TestContext {
 
     public void setTestData(List<Map<String, String>> testData) {
         this.testData = testData;
+    }
+
+    public String getFeatureFileName() {
+        return featureFileName;
+    }
+
+    public void setFeatureFileName(String featureFileName) {
+        this.featureFileName = featureFileName;
     }
 }

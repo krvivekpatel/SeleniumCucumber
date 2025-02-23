@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
         glue = {"stepdefinitions", "hooks", "utils"},
         plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"},
         monochrome = true,
-        tags = "@Test" // Default tag, can be overridden via TestNG XML or command line
+        tags = "@smoke" // Default tag, can be overridden via TestNG XML or command line
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
     @Override

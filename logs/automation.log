@@ -142,3 +142,843 @@
 2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
 2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
 2025-02-23 04:22:40 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:32:20 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:32:20 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 04:32:20 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 04:32:20 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:32:20 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful_2
+2025-02-23 04:32:20 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful_1
+2025-02-23 04:32:20 [TestNG-PoolService-1] ERROR utils.ExcelDataProvider - Sheet 'Successful_1' not found in src/test/resources/testdata/Login.xlsx
+2025-02-23 04:32:20 [TestNG-PoolService-2] ERROR utils.ExcelDataProvider - Sheet 'Successful_2' not found in src/test/resources/testdata/Login.xlsx
+2025-02-23 04:32:20 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:32:20 [TestNG-PoolService-1] ERROR utils.ExcelDataProvider - Error loading test data from src/test/resources/testdata/Login.xlsx
+java.lang.RuntimeException: Sheet 'Successful_1' not found in src/test/resources/testdata/Login.xlsx
+	at utils.ExcelDataProvider.loadTestData(ExcelDataProvider.java:25) ~[test-classes/:?]
+	at hooks.Hooks.setUp(Hooks.java:33) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 04:32:20 [TestNG-PoolService-2] ERROR utils.ExcelDataProvider - Error loading test data from src/test/resources/testdata/Login.xlsx
+java.lang.RuntimeException: Sheet 'Successful_2' not found in src/test/resources/testdata/Login.xlsx
+	at utils.ExcelDataProvider.loadTestData(ExcelDataProvider.java:25) ~[test-classes/:?]
+	at hooks.Hooks.setUp(Hooks.java:33) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 04:32:20 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:32:20 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: FAILED
+2025-02-23 04:32:20 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: FAILED
+2025-02-23 04:32:20 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 04:32:20 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 04:32:22 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:32:22 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:32:22 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:32:22 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:32:23 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:32:23 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:32:23 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 04:32:23 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:32:23 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:32:49 [TestNG-PoolService-2] INFO  hooks.Hooks - Starting scenario: Successful_2 from feature: Login.feature
+2025-02-23 04:32:49 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:32:49 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Successful_1 from feature: Login.feature
+2025-02-23 04:32:49 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-2
+2025-02-23 04:32:49 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful-1
+2025-02-23 04:32:49 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:32:49 [TestNG-PoolService-1] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-1
+2025-02-23 04:32:49 [TestNG-PoolService-2] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful-2
+2025-02-23 04:32:49 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:32:49 [TestNG-PoolService-2] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:32:51 [TestNG-PoolService-2] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 19
+2025-02-23 04:32:51 [TestNG-PoolService-2] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:32:51 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:32:51 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:32:51 [TestNG-PoolService-1] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 18
+2025-02-23 04:32:51 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:32:51 [TestNG-PoolService-1] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:32:51 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:32:51 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:32:51 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:32:51 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:32:51 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:32:52 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:32:52 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:32:52 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 04:32:52 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:32:52 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:32:53 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Entering username=user-succ2-1, password=pass-succ2-1
+2025-02-23 04:32:53 [TestNG-PoolService-2] INFO  stepdefinitions.LoginSteps - Thread 19: Verifying dashboard displayed
+2025-02-23 04:32:53 [TestNG-PoolService-2] INFO  hooks.Hooks - Finished scenario: Successful-2, Status: PASSED
+2025-02-23 04:32:53 [TestNG-PoolService-2] INFO  hooks.Hooks - Embedded log file for scenario: Successful-2 into report
+2025-02-23 04:32:53 [TestNG-PoolService-2] INFO  utils.BrowserManager - Quitting WebDriver for thread: 19
+2025-02-23 04:32:53 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Entering username=user-succ1-1, password=pass-succ1-1
+2025-02-23 04:32:53 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Thread 18: Verifying dashboard displayed
+2025-02-23 04:32:53 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Successful-1, Status: PASSED
+2025-02-23 04:32:53 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Successful-1 into report
+2025-02-23 04:32:53 [TestNG-PoolService-1] INFO  utils.BrowserManager - Quitting WebDriver for thread: 18
+2025-02-23 04:44:11 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful_login_with_valid_credentials from feature: Login.feature
+2025-02-23 04:44:11 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 04:44:11 [TestNG-PoolService-0] ERROR utils.ExcelDataProvider - Sheet 'Successful login with valid credentials' not found in src/test/resources/testdata/Login.xlsx
+2025-02-23 04:44:11 [TestNG-PoolService-0] ERROR utils.ExcelDataProvider - Error loading test data from src/test/resources/testdata/Login.xlsx
+java.lang.RuntimeException: Sheet 'Successful login with valid credentials' not found in src/test/resources/testdata/Login.xlsx
+	at utils.ExcelDataProvider.loadTestData(ExcelDataProvider.java:27) ~[test-classes/:?]
+	at hooks.Hooks.setUp(Hooks.java:34) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 04:44:11 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful login with valid credentials, Status: FAILED
+2025-02-23 04:44:11 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful login with valid credentials into report
+2025-02-23 04:44:11 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:44:47 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:44:47 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:44:47 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:44:47 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:44:49 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:44:49 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:44:49 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:44:49 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:44:50 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:44:50 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:44:50 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 04:44:50 [TestNG-PoolService-0] ERROR utils.ExcelDataProvider - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.io.FileNotFoundException: src\test\resources\testdata\Login.xlsx (The process cannot access the file because it is being used by another process)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:126) ~[?:?]
+	at utils.ExcelDataProvider.writeTestData(ExcelDataProvider.java:79) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:57) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 04:44:50 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 04:44:50 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:44:50 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:45:11 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:45:11 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:45:11 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:45:11 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:45:13 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:45:13 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:45:13 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:45:13 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:45:14 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:45:14 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:45:14 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 04:45:14 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully wrote test data to Excel for scenario: Successful login with valid credentials
+2025-02-23 04:45:14 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Wrote new login data to Excel: {password=newPass, username=newUser}
+2025-02-23 04:45:14 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 04:45:15 [TestNG-PoolService-0] ERROR utils.ExcelDataProvider - Sheet 'Successful login with valid credentials' not found in src/test/resources/testdata/Login.xlsx
+2025-02-23 04:45:15 [TestNG-PoolService-0] ERROR utils.ExcelDataProvider - Error loading test data from src/test/resources/testdata/Login.xlsx
+java.lang.RuntimeException: Sheet 'Successful login with valid credentials' not found in src/test/resources/testdata/Login.xlsx
+	at utils.ExcelDataProvider.loadTestData(ExcelDataProvider.java:27) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_re_read_the_updated_excel_data(LoginSteps.java:63) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 04:45:15 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 04:45:15 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:45:15 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:47:04 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:47:04 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:47:04 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:47:04 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:47:06 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:47:06 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:47:06 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:47:06 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:47:08 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:47:08 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:47:08 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 04:47:08 [TestNG-PoolService-0] ERROR utils.ExcelDataProvider - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'Successful login with valid credentials'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:914) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:867) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:123) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at utils.ExcelDataProvider.writeTestData(ExcelDataProvider.java:62) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:57) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 04:47:08 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 04:47:08 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:47:08 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 04:47:49 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 04:47:49 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:47:49 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:47:49 [TestNG-PoolService-0] INFO  utils.BrowserManager - Loaded configuration from config.properties
+2025-02-23 04:47:51 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized ChromeDriver with options: headless=false, size=1920x1080 for thread: 17
+2025-02-23 04:47:51 [TestNG-PoolService-0] INFO  utils.BrowserManager - Set implicit wait to 10s and page load timeout to 30s
+2025-02-23 04:47:51 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 2 rows
+2025-02-23 04:47:51 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Navigating to login page
+2025-02-23 04:47:52 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Entering username= user1, password=pass1
+2025-02-23 04:47:52 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Thread 17: Verifying dashboard displayed
+2025-02-23 04:47:52 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Writing test data to Excel for feature: Login.feature, scenario: Successful
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully wrote test data to Excel for scenario: Successful
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Wrote new login data to Excel: {password=newPass, username=newUser}
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Loading test data for feature: Login.feature, scenario: Successful
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  utils.ExcelDataProvider - Successfully loaded test data for scenario: Successful
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Re-read updated test data: 3 rows
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Row: {password=pass1, username= user1}
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Row: {password=Pass2, username= user1}
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Row: {password=newUser, username=newPass}
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: PASSED
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful into report
+2025-02-23 04:47:53 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 15:50:23 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 15:50:23 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful
+2025-02-23 15:50:24 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Successful
+2025-02-23 15:50:28 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 15:50:28 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 15:50:28 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 3 rows
+2025-02-23 15:50:28 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: http://example.com/login
+2025-02-23 15:50:40 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 15:50:40 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful
+2025-02-23 15:50:40 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 15:56:22 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 15:56:22 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful
+2025-02-23 15:56:22 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Successful
+2025-02-23 15:56:26 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 15:56:26 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 15:56:26 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 3 rows
+2025-02-23 15:56:26 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: http://google.com/
+2025-02-23 15:56:38 [TestNG-PoolService-0] WARN  pages.LoginPage - Dashboard not displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: dashboard (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272) ~[selenium-support-3.141.59.jar:?]
+	at pages.LoginPage.isDashboardDisplayed(LoginPage.java:63) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_should_see_the_dashboard(LoginSteps.java:50) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dashboard"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-92RE0IQ8', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 67ca4f322fa5e73aac1d9bb06fff6008
+*** Element info: {Using=id, value=dashboard}
+	at jdk.internal.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.By$ById.findElement(By.java:188) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249) ~[selenium-support-3.141.59.jar:?]
+	... 37 more
+2025-02-23 15:56:38 [TestNG-PoolService-0] ERROR stepdefinitions.LoginSteps - Dashboard not displayed as expected
+2025-02-23 15:56:38 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 15:56:38 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful
+2025-02-23 15:56:38 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:40:18 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 16:40:18 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful
+2025-02-23 16:40:19 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Successful
+2025-02-23 16:40:22 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 16:40:22 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 16:40:22 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 3 rows
+2025-02-23 16:40:22 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: http://google.com/
+2025-02-23 16:40:33 [TestNG-PoolService-0] WARN  pages.LoginPage - Dashboard not displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: dashboard (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272) ~[selenium-support-3.141.59.jar:?]
+	at pages.LoginPage.isDashboardDisplayed(LoginPage.java:63) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_should_see_the_dashboard(LoginSteps.java:50) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dashboard"}
+  (Session info: chrome=133.0.6943.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-92RE0IQ8', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Vivek\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57056}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6da6e90dd2a6b2d63022db8b8a4057c5
+*** Element info: {Using=id, value=dashboard}
+	at jdk.internal.reflect.GeneratedConstructorAccessor21.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.By$ById.findElement(By.java:188) ~[selenium-api-3.141.59.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315) ~[selenium-remote-driver-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201) ~[selenium-support-3.141.59.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249) ~[selenium-support-3.141.59.jar:?]
+	... 37 more
+2025-02-23 16:40:33 [TestNG-PoolService-0] ERROR stepdefinitions.LoginSteps - Dashboard not displayed as expected
+2025-02-23 16:40:33 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 16:40:33 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful
+2025-02-23 16:40:33 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:41:07 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 16:41:07 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful
+2025-02-23 16:41:08 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Successful
+2025-02-23 16:41:11 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 16:41:11 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 16:41:11 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 3 rows
+2025-02-23 16:41:11 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: http://google.com/
+2025-02-23 16:41:13 [TestNG-PoolService-0] INFO  pages.LoginPage - Dashboard is displayed
+2025-02-23 16:41:13 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:41:13 [TestNG-PoolService-0] ERROR utils.TestDataRepository - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'Successful login with valid credentials'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:914) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:867) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:123) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at utils.TestDataRepository.writeTestData(TestDataRepository.java:60) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 16:41:13 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 16:41:13 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful
+2025-02-23 16:41:13 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:43:03 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Successful from feature: Login.feature
+2025-02-23 16:43:03 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful
+2025-02-23 16:43:04 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Successful
+2025-02-23 16:43:07 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 16:43:07 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 16:43:07 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 3 rows
+2025-02-23 16:43:07 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: http://google.com/
+2025-02-23 16:43:09 [TestNG-PoolService-0] INFO  pages.LoginPage - Dashboard is displayed
+2025-02-23 16:43:09 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:43:09 [TestNG-PoolService-0] ERROR utils.TestDataRepository - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'Successful login with valid credentials'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:914) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:867) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:123) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at utils.TestDataRepository.writeTestData(TestDataRepository.java:60) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 16:43:09 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Successful, Status: FAILED
+2025-02-23 16:43:09 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Successful
+2025-02-23 16:43:09 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:55:30 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Login from feature: Login.feature
+2025-02-23 16:55:30 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Login
+2025-02-23 16:55:31 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Login
+2025-02-23 16:55:35 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 16:55:35 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 16:55:35 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 1 rows
+2025-02-23 16:55:35 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: https://practicetestautomation.com/practice-test-login/
+2025-02-23 16:55:41 [TestNG-PoolService-0] INFO  pages.LoginPage - Entered username: student
+2025-02-23 16:55:41 [TestNG-PoolService-0] INFO  pages.LoginPage - Entered password: Password123
+2025-02-23 16:55:42 [TestNG-PoolService-0] INFO  pages.LoginPage - Clicked login button
+2025-02-23 16:55:42 [TestNG-PoolService-0] INFO  pages.LoginPage - Dashboard is displayed
+2025-02-23 16:55:42 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:55:42 [TestNG-PoolService-0] ERROR utils.TestDataRepository - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.io.FileNotFoundException: src\test\resources\testdata\Login.xlsx (The process cannot access the file because it is being used by another process)
+	at java.io.FileOutputStream.open0(Native Method) ~[?:?]
+	at java.io.FileOutputStream.open(FileOutputStream.java:298) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[?:?]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:126) ~[?:?]
+	at utils.TestDataRepository.writeTestData(TestDataRepository.java:75) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 16:55:43 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Login, Status: FAILED
+2025-02-23 16:55:43 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Login
+2025-02-23 16:55:43 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:56:12 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Login from feature: Login.feature
+2025-02-23 16:56:12 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Login
+2025-02-23 16:56:12 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Login
+2025-02-23 16:56:16 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 16:56:16 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 16:56:16 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 1 rows
+2025-02-23 16:56:16 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: https://practicetestautomation.com/practice-test-login/
+2025-02-23 16:56:21 [TestNG-PoolService-0] INFO  pages.LoginPage - Entered username: student
+2025-02-23 16:56:22 [TestNG-PoolService-0] INFO  pages.LoginPage - Entered password: Password123
+2025-02-23 16:56:23 [TestNG-PoolService-0] INFO  pages.LoginPage - Clicked login button
+2025-02-23 16:56:23 [TestNG-PoolService-0] INFO  pages.LoginPage - Dashboard is displayed
+2025-02-23 16:56:23 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully wrote test data to Excel for scenario: Successful login with valid credentials
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:56:24 [TestNG-PoolService-0] WARN  utils.TestDataRepository - Sheet 'Successful login with valid credentials' not found, returning empty data
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Wrote new login data to Excel: {password=newPass, username=newUser}
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:56:24 [TestNG-PoolService-0] WARN  utils.TestDataRepository - Sheet 'Successful login with valid credentials' not found, returning empty data
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Re-read updated test data: 0 rows
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Login, Status: PASSED
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Login
+2025-02-23 16:56:24 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:56:48 [TestNG-PoolService-1] INFO  hooks.Hooks - Starting scenario: Login from feature: Login.feature
+2025-02-23 16:56:48 [TestNG-PoolService-0] INFO  hooks.Hooks - Starting scenario: Login from feature: Login.feature
+2025-02-23 16:56:48 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Login
+2025-02-23 16:56:48 [TestNG-PoolService-1] INFO  utils.TestDataRepository - Reading test data for feature: Login.feature, scenario: Login
+2025-02-23 16:56:49 [TestNG-PoolService-1] INFO  utils.TestDataRepository - Successfully read test data for scenario: Login
+2025-02-23 16:56:49 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Successfully read test data for scenario: Login
+2025-02-23 16:56:52 [TestNG-PoolService-1] INFO  utils.BrowserManager - Initialized WebDriver for thread: 18
+2025-02-23 16:56:52 [TestNG-PoolService-0] INFO  utils.BrowserManager - Initialized WebDriver for thread: 17
+2025-02-23 16:56:52 [TestNG-PoolService-1] INFO  pages.LoginPage - Initialized LoginPage for thread: 18
+2025-02-23 16:56:52 [TestNG-PoolService-0] INFO  pages.LoginPage - Initialized LoginPage for thread: 17
+2025-02-23 16:56:52 [TestNG-PoolService-1] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 1 rows
+2025-02-23 16:56:52 [TestNG-PoolService-0] INFO  stepdefinitions.LoginSteps - Initialized LoginSteps with test data: 1 rows
+2025-02-23 16:56:52 [TestNG-PoolService-1] INFO  pages.LoginPage - Navigating to login page: https://practicetestautomation.com/practice-test-login/
+2025-02-23 16:56:52 [TestNG-PoolService-0] INFO  pages.LoginPage - Navigating to login page: https://practicetestautomation.com/practice-test-login/
+2025-02-23 16:56:56 [TestNG-PoolService-0] INFO  pages.LoginPage - Entered username: student
+2025-02-23 16:56:57 [TestNG-PoolService-0] INFO  pages.LoginPage - Entered password: Password123
+2025-02-23 16:56:57 [TestNG-PoolService-1] INFO  pages.LoginPage - Entered username: student
+2025-02-23 16:56:57 [TestNG-PoolService-1] INFO  pages.LoginPage - Entered password: Password123
+2025-02-23 16:56:58 [TestNG-PoolService-0] INFO  pages.LoginPage - Clicked login button
+2025-02-23 16:56:58 [TestNG-PoolService-0] INFO  pages.LoginPage - Dashboard is displayed
+2025-02-23 16:56:58 [TestNG-PoolService-0] INFO  utils.TestDataRepository - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:56:58 [TestNG-PoolService-0] ERROR utils.TestDataRepository - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'Successful login with valid credentials'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:914) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:867) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:123) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at utils.TestDataRepository.writeTestData(TestDataRepository.java:60) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 16:56:58 [TestNG-PoolService-0] INFO  hooks.Hooks - Finished scenario: Login, Status: FAILED
+2025-02-23 16:56:58 [TestNG-PoolService-0] INFO  hooks.Hooks - Embedded log file for scenario: Login
+2025-02-23 16:56:58 [TestNG-PoolService-0] INFO  utils.BrowserManager - Quitting WebDriver for thread: 17
+2025-02-23 16:56:58 [TestNG-PoolService-1] INFO  pages.LoginPage - Clicked login button
+2025-02-23 16:56:58 [TestNG-PoolService-1] INFO  pages.LoginPage - Dashboard is displayed
+2025-02-23 16:56:58 [TestNG-PoolService-1] INFO  utils.TestDataRepository - Writing test data to Excel for feature: Login.feature, scenario: Successful login with valid credentials
+2025-02-23 16:56:58 [TestNG-PoolService-1] ERROR utils.TestDataRepository - Error writing test data to src/test/resources/testdata/Login.xlsx
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'Successful login with valid credentials'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:914) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:867) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:123) ~[poi-ooxml-4.1.2.jar:4.1.2]
+	at utils.TestDataRepository.writeTestData(TestDataRepository.java:60) ~[test-classes/:?]
+	at stepdefinitions.LoginSteps.i_write_new_login_data_to_excel(LoginSteps.java:61) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71) ~[cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116) ~[cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) [cucumber-core-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113) [cucumber-testng-6.9.0.jar:6.9.0]
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31) [cucumber-testng-6.9.0.jar:6.9.0]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) [testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71) [testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14) [testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2025-02-23 16:56:58 [TestNG-PoolService-1] INFO  hooks.Hooks - Finished scenario: Login, Status: FAILED
+2025-02-23 16:56:58 [TestNG-PoolService-1] INFO  hooks.Hooks - Embedded log file for scenario: Login
+2025-02-23 16:56:58 [TestNG-PoolService-1] INFO  utils.BrowserManager - Quitting WebDriver for thread: 18
